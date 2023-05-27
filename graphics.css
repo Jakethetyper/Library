@@ -1,0 +1,102 @@
+*{
+    padding: 0;
+    margin: 0;
+
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 9vh;
+    background-color: brown;
+}
+
+h1 {
+    margin: 20px;
+}
+
+button{
+    margin: 20px;
+
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+    padding: 30px;
+}
+
+.book {
+    width: 360px;
+    height: 465px;
+    background-image: url(bookImage.jpg);
+    background-size: cover;
+    background-repeat: none;
+    display: flex;
+    flex-direction: column;
+    gap: 5PX;
+    align-items: center;
+    justify-content: center;
+}
+
+.one {
+    color: goldenrod;
+    margin: 40px;
+    font-size: xx-large;
+}
+
+.two {
+    color: white;
+    margin: 10px;
+    font-size: large;
+}
+
+.three {
+    color: rgb(230, 187, 0);
+    margin: 10px;
+    font-size: medium;
+}
+
+.four {
+    color: white;
+    font-size: medium;
+}
+
+.newBook {
+    position: absolute;
+    top: 35%;
+    left: 42.5%;
+    height: 30vh;
+    width: 15vw;
+    display: flex;
+    flex-direction: column;
+    border: 3px solid brown;
+    align-items: center;
+    justify-content: space-between;
+    border-radius: 10px;
+    padding: 20px;
+    background-color: white;
+}
+
+.close {
+    position: absolute;
+    top: 0.5vh;
+    right: 0.5vh;
+}
+
+.deleteBook {
+    position: relative;
+    top: 10vh;
+    border: none;
+    background: none;
+    font-size: larger;
+    transition: transform 0.3s;
+}
+
+.deleteBook:hover {
+    transform: scale(1.5);
+}

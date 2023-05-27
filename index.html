@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="graphics.css">
+</head>
+<body>
+    <nav><h1>Library</h1><button class="but1">Add a Book</button></nav>
+    <div class="container">
+        <div class="book">
+            <h1 class="one">Add A Book!</h1>
+            <h1 class="two">Author Jake</h2>
+            <h1 class="three">550 pages</h3>
+            <h1 class="four">Read</h1>
+            <button class="deleteBook">Delete</button>
+        </div>
+    </div>
+    <form action="" class="newBook">
+                <div>
+                    <label for="title">Title?</label><br>
+                    <input type="text" name="title" id="title" class="form-control" autocomplete="off">
+                </div>
+                <div>
+                    <label for="author">Author?</label><br>
+                    <input type="text" name="author" id="author" class="form-control">
+                </div>
+                <div>
+                    <label for="pages">Page Count?</label><br>
+                    <input type="number" name="pages" id="pages" class="form-control">
+                </div>
+                <select name="finish" id="finish" class="finish">
+                    <option value="Read">Read</option>
+                    <option value=" Not Read">Unread</option>
+                </select>
+                <button type="submit" class="publish">Submit</button>
+                <button class="close">X</button>
+    </form>
+    <script src="main.js"></script>
+</body>
+</html>
